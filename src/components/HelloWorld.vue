@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="catalog">
+    <div class="catalog grid gap-5 grid-cols-2 grid-rows-2 justify-center">
       <div class="room room101">
         <div class="image"></div>
         <p>Quarto 101</p>
@@ -34,16 +34,13 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .catalog {
-  display: grid;
-  justify-content: center;
   grid: auto / auto auto;
-  grid-gap: 30px;
 
   .image {
     background-color: #2e2e2e;
     border-radius: 8px 8px 0 0;
-    width: 250px;
-    height: 250px;
+    width: 249px;
+    height: 249px;
   }
 
   .room {
