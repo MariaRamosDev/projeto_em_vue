@@ -20,7 +20,7 @@ export default defineComponent({
     class="room rounded-3xl flex flex-col h-[30rem] w-[25rem]"
     @click="ToggleMenu"
   >
-    <div class="image bg-image h-[25rem] 2-ful"></div>
+    <div class="image bg-image h-[25rem] 2-full"></div>
     <div class="text-area" :class="`${is_expanded && 'is-expanded'}`">
       <div class="title bg-text">
         <p class="font-roboto italic text-4xl text-left">Master</p>
@@ -52,7 +52,7 @@ export default defineComponent({
     }
     &.is-expanded {
       overflow: scroll;
-      height: 45rem;
+      height: 15rem;
     }
   }
 }
