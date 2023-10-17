@@ -4,12 +4,12 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "StandardRoom",
   setup() {
-    const is_expanded = ref(false);
-    return { is_expanded };
+    const EXPANDED = ref(false);
+    return { EXPANDED };
   },
   methods: {
     ToggleMenu() {
-      this.is_expanded = !this.is_expanded;
+      this.EXPANDED = !this.EXPANDED;
     },
   },
 });
@@ -21,7 +21,7 @@ export default defineComponent({
     @click="ToggleMenu"
   >
     <div class="image bg-image h-[25rem] w-full"></div>
-    <div class="text-area" :class="`${is_expanded && 'is-expanded'}`">
+    <div class="text-area" :class="`${EXPANDED && 'expanded'}`">
       <div class="title bg-text">
         <p class="font-roboto italic text-4xl text-left">Standard</p>
       </div>
@@ -38,23 +38,21 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .room {
-  overflow: hidden;
+  overflow: hidden hidden;
 
   .text-area {
-    height: calc(100% - 25rem);
+    height: 5rem;
     transition: 0.2s ease-out;
-    position: relative;
 
     .title,
     .description {
-      padding: 15px 30px;
+      padding: 10px 30px;
       width: 100%;
     }
-    &.is-expanded {
-      height: 15rem;
-      overflow: scroll;
+    &.expanded {
+      height: 10rem;
+      overflow: visible scroll;
       transition: 0.2s ease-out;
-      position: relative;
     }
   }
 }
