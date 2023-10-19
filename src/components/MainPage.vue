@@ -17,8 +17,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="bg-background">
-    <div class="catalog grid gap-5 grid-cols-2 grid-rows-2 justify-center p-10">
+  <main class="tw-bg-background">
+    <div
+      id="catalog"
+      class="tw-grid tw-gap-5 tw-grid-cols-2 tw-grid-rows-2 tw-justify-center tw-p-10"
+    >
       <StandardRoom />
       <MasterRoom />
       <MasterPlus />
@@ -28,7 +31,7 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-.catalog {
+#catalog {
   grid: auto / auto auto;
 }
 </style>

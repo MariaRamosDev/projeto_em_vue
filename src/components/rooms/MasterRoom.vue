@@ -1,32 +1,22 @@
-<script lang="ts">
-import { defineComponent, ref } from "vue";
-
-export default defineComponent({
-  name: "MasterRoom",
-  setup() {
-    const is_expanded = ref(false);
-    return { is_expanded };
-  },
-  methods: {
-    ToggleMenu() {
-      this.is_expanded = !this.is_expanded;
-    },
-  },
-});
-</script>
-
 <template>
   <div
-    class="room rounded-3xl flex flex-col h-[30rem] w-[25rem]"
-    @click="ToggleMenu"
+    id="room"
+    class="tw-rounded-3xl tw-flex tw-flex-col tw-h-96 tw-w-[25rem] collapsed"
+    role="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#description2"
+    aria-expanded="false"
+    aria-controls="description2"
   >
-    <div class="image bg-image h-[25rem] 2-full"></div>
-    <div class="text-area" :class="`${is_expanded && 'is-expanded'}`">
-      <div class="title bg-text">
-        <p class="font-roboto italic text-4xl text-left">Master</p>
+    <div class="image tw-bg-image tw-h-[25rem] tw-w-full"></div>
+    <div id="text-area">
+      <div class="tw-bg-text">
+        <p id="title" class="tw-font-roboto tw-italic tw-text-4xl tw-text-left">
+          Master
+        </p>
       </div>
-      <div class="description bg-text">
-        <p class="font-roboto italic text-lg text-left">
+      <div id="description2" class="collapse tw-bg-text tw-max-h-36">
+        <p class="tw-font-roboto tw-italic tw-text-lg tw-text-left">
           Aconchego e cuidado! O ideal para relaxar. O quarto Master conta com 2
           camas de solteiro, 1 banheiro, telefone, frigobar, TV, entre os demais
           serviços do executivo. Ideal para 2 pessoas, com uma bela vista para o
@@ -38,21 +28,17 @@ export default defineComponent({
 </template>
 
 <style lang="scss" scoped>
-.room {
-  overflow: hidden;
+#room {
+  overflow: hidden hidden;
 
-  .text-area {
-    height: calc(100% - 25rem);
+  #text-area {
     transition: 0.2s ease-out;
 
-    .title,
-    .description {
-      padding: 15px 30px;
+    #title,
+    #description2 {
+      padding: 10px 30px;
       width: 100%;
-    }
-    &.is-expanded {
-      overflow: scroll;
-      height: 15rem;
+      overflow: hidden scroll;
     }
   }
 }
