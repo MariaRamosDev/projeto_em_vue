@@ -17,17 +17,15 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="tw-bg-background">
-    <div
-      id="catalog"
-      class="tw-grid tw-gap-5 tw-grid-cols-2 tw-grid-rows-2 tw-justify-center tw-p-10"
-    >
-      <StandardRoom />
-      <MasterRoom />
-      <MasterPlus />
-      <MasterSuperior />
-    </div>
-  </main>
+  <h1 class="tw-text-text tw-font-roboto tw-mt-5 tw-text-5xl fw-light">
+    Hotel Sereno
+  </h1>
+  <div id="catalog" class="tw-flex tw-flex-col tw-p-10">
+    <StandardRoom />
+    <MasterRoom />
+    <MasterPlus />
+    <MasterSuperior />
+  </div>
 </template>
 
 <style scoped lang="scss">
