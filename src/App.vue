@@ -1,9 +1,11 @@
 <template>
-  <nav class="tw-bg-header tw-font-roboto">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="tw-bg-header/75 tw-font-roboto tw-text-4xl">
+    <router-link to="/">Início</router-link> |
+    <router-link to="/about">Sobre</router-link>
   </nav>
-  <router-view />
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
@@ -13,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #502c3b;
+  background-color: #881337;
 }
 
 nav {
