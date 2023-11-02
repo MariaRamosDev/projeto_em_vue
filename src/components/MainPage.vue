@@ -17,19 +17,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <h1 class="tw-text-text tw-font-roboto tw-mt-5 tw-text-5xl fw-light">
-    Hotel Sereno
-  </h1>
-  <div id="catalog" class="tw-flex tw-flex-col tw-p-10">
-    <StandardRoom />
-    <MasterRoom />
-    <MasterPlus />
-    <MasterSuperior />
-  </div>
+  <StandardRoom />
+  <MasterRoom />
+  <MasterPlus />
+  <MasterSuperior />
 </template>
-
-<style scoped lang="scss">
-#catalog {
-  grid: auto / auto auto;
-}
-</style>
