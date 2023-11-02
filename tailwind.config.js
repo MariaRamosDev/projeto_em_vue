@@ -7,7 +7,7 @@ module.exports = {
     colors: {
       text: "#fff1f2",
       background: "#881337",
-      header: "#fda4af",
+      header: "#fecdd3",
       image: "#fecdd3",
     },
     fontFamily: {
