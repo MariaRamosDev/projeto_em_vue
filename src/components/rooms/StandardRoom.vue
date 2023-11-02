@@ -1,49 +1,53 @@
 <template>
-  <section class="tw-w-[75rem] tw-mx-auto tw-my-8">
-    <div
-      id="room"
-      class="tw-rounded-3xl tw-flex tw-flex-col collapsed"
-      role="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#description1"
-      aria-expanded="false"
-      aria-controls="description1"
-    >
-      <div class="image tw-bg-image tw-h-[20rem] tw-w-full"></div>
-      <div id="text-area">
-        <div class="tw-bg-text">
-          <p
-            id="title"
-            class="tw-font-roboto tw-italic tw-text-4xl tw-text-left"
-          >
-            Standard
-          </p>
+  <article>
+    <div class="room">
+      <figure class="image">
+        <div class="text-area tw-text-text tw-font-roboto">
+          <p class="title tw-text-3xl">Standard</p>
+          <div class="description">
+            <p class="tw-text-md">
+              Simplicidade e comodidade! O quarto Standard conta com 1 cama de
+              solteiro, 1 banheiro, telefone, TV, entre os demais serviços
+              básicos. Ideal para 2 pessoas. Vista para a rua!
+            </p>
+          </div>
         </div>
-        <div id="description1" class="collapse tw-bg-text tw-max-h-36">
-          <p class="tw-font-roboto tw-text-lg tw-text-left">
-            Simplicidade e comodidade! O quarto Standard conta com 1 cama de
-            solteiro, 1 banheiro, telefone, TV, entre os demais serviços
-            básicos. Ideal para 2 pessoas. Vista para a rua!
-          </p>
-        </div>
-      </div>
+      </figure>
     </div>
-  </section>
+  </article>
 </template>
 
 <style lang="scss" scoped>
-#room {
-  overflow: hidden hidden;
+article {
+  margin-bottom: 2rem;
+  .room {
+    display: flex;
+    flex-direction: column;
 
-  #text-area {
-    #title,
-    #description1 {
-      padding: 10px 30px;
-      width: 100%;
-      overflow: auto;
-    }
-    .collapsing {
-      transition: 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    figure {
+      background-image: url(@/assets/images/standard-room.jpg);
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .text-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        text-shadow: 0px 0px 5px rgba(151, 109, 126, 0.575);
+        padding: 0 30px;
+        height: 25rem;
+        width: 35rem;
+
+        .title,
+        .description {
+          width: 100%;
+        }
+      }
     }
   }
 }
