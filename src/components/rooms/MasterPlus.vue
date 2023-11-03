@@ -44,7 +44,7 @@ article {
         text-shadow: 0px 0px 5px rgba(151, 109, 126, 0.575);
         padding: 0 30px;
         height: 25rem;
-        width: 35rem;
+        width: 45rem;
 
         .title,
         .description {
