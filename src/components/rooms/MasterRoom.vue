@@ -32,13 +32,13 @@ article {
       background-repeat: no-repeat;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: flex-start;
 
       .text-area {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: right;
+        text-align: left;
         text-shadow: 0px 0px 5px rgba(151, 109, 126, 0.575);
         padding: 0 30px;
         height: 25rem;
