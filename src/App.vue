@@ -1,13 +1,13 @@
 <template>
   <header class="tw-bg-header/75 tw-font-roboto tw-text-md">
     <span
-      class="tw-text-text tw-font-roboto tw-mt-5 tw-text-2xl tw-font-semibold"
+      class="tw-text-[#502c3b] tw-font-roboto tw-mt-5 tw-text-2xl tw-font-semibold"
     >
       Hotel Sereno
     </span>
     <nav>
-      <router-link to="/">Início</router-link> |
-      <router-link to="/about">Sobre</router-link>
+      <router-link to="/" class="tw-text-[#210B23]">Início</router-link> |
+      <router-link to="/about" class="tw-text-[#210B23]">Sobre</router-link>
     </nav>
   </header>
   <main>
@@ -17,7 +17,7 @@
 
 <style lang="scss">
 body {
-  background-color: #fff1f2;
+  background-color: #fefbfe;
 
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -36,6 +36,7 @@ body {
       line-height: 3rem;
       vertical-align: middle;
       height: 4.3rem;
+      color: #502c3b;
 
       nav {
         padding: 10px;
@@ -46,8 +47,8 @@ body {
 
           &.router-link-exact-active {
             transition: 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-            border-bottom: #fff1f2 solid 2px;
-            @apply tw-text-text;
+            border-bottom: #9c507c solid 2px;
+            color: #9c507c;
           }
         }
       }
