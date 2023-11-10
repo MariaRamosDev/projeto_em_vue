@@ -45,13 +45,11 @@ export default defineComponent({
       ],
     };
   },
-  methods: {
-    async beforeMount() {
-      this.rooms = await axios
-        .get("http://localhost:3000/rooms")
-        .then((response) => response.data)
-        .catch((error) => console.log(`Algo deu errado 🫤👉 ${error}`));
-    },
+  async beforeMount() {
+    this.rooms = await axios
+      .get("http://localhost:3000/rooms")
+      .then((response) => response.data)
+      .catch((error) => console.log(`Algo deu errado 🫤👉 ${error}`));
   },
 });
 </script>
