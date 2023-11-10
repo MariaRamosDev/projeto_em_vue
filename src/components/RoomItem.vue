@@ -26,10 +26,10 @@ export default defineComponent({
           backgroundRepeat: 'no-repeat',
         }"
       >
-        <div class="text-area tw-text-text tw-font-roboto">
-          <p class="title tw-text-3xl">{{ title }}</p>
+        <div class="text-area text-text font-roboto">
+          <p class="title text-3xl">{{ title }}</p>
           <div class="description">
-            <p class="tw-text-md">{{ description }}</p>
+            <p class="text-md">{{ description }}</p>
           </div>
           <p style="margin-top: 1.5rem">{{ price }}</p>
         </div>

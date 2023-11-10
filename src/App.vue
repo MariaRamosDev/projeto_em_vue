@@ -1,13 +1,11 @@
 <template>
-  <header class="tw-bg-header/75 tw-font-roboto tw-text-md">
-    <span
-      class="tw-text-[#502c3b] tw-font-roboto tw-mt-5 tw-text-2xl tw-font-semibold"
-    >
+  <header class="bg-header/75 font-roboto text-md">
+    <span class="text-[#502c3b] font-roboto mt-5 text-2xl font-semibold">
       Hotel Sereno
     </span>
     <nav>
-      <router-link to="/" class="tw-text-[#210B23]">Início</router-link> |
-      <router-link to="/about" class="tw-text-[#210B23]">Sobre</router-link>
+      <router-link to="/" class="text-[#210B23]">Início</router-link> |
+      <router-link to="/about" class="text-[#210B23]">Sobre</router-link>
     </nav>
   </header>
   <main>
