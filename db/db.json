@@ -1,32 +1,55 @@
 {
   "rooms": [
     {
-      "id": "1",
+      "roomId": "1",
       "title": "Standard",
       "description": "Simplicidade e comodidade! O quarto Standard conta com 1 cama de solteiro, 1 banheiro, telefone, TV, entre os demais serviços básicos. Ideal para 2 pessoas. Vista para a rua!",
-      "price": "R$ 40,00",
+      "price": "40,00",
       "img": "https://images.pexels.com/photos/6970065/pexels-photo-6970065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "2",
+      "roomId": "2",
       "title": "Master",
       "description": "Aconchego e cuidado! O ideal para relaxar. O quarto Master conta com 2 camas de solteiro, 1 banheiro, telefone, frigobar, TV, entre os demais serviços do executivo. Ideal para 2 pessoas, com uma bela vista para o jardim.",
-      "price": "R$ 60,00",
+      "price": "60,00",
       "img": "https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "3",
+      "roomId": "3",
       "title": "Master Plus",
       "description": "Conforto e tranquilidade! Nada melhor do que após uma longa viagem. O quarto Master Plus conta com 1 cama de casal, 1 cama de solteiro, 2 banheiros, telefone, frigobar, TV, uma mini sala-de-estar, banheira, entre os demais serviços do executivo plus. Ideal para 2 à 3 pessoas. A melhor localização do hotel, com vista para o jardim.",
-      "price": "R$ 80,00",
+      "price": "80,00",
       "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "4",
+      "roomId": "4",
       "title": "Master Superior",
       "description": "Luxo e conforto! O quarto Master Superior é um dos maiores e mais completos, com uma grande sala de estar, 2 camas de casal, 2 banheiros, um frigobar, TV, telefone, hidromassagem, entre os demais serviços do deluxe. Ideal para 3 à 4 pessoas. Muito bem indicado para férias. A melhor vista para o mar.",
-      "price": "R$ 120,00",
+      "price": "120,00",
       "img": "https://images.pexels.com/photos/11671086/pexels-photo-11671086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "devs": [
+    {
+      "devId": "1",
+      "name": "Igor Borges",
+      "username": "igorbkuhl",
+      "img": "https://avatars.githubusercontent.com/u/124447707?v=4",
+      "link": "https://github.com/igorbkuhl "
+    },
+    {
+      "devId": "2",
+      "name": "Maria Ramos",
+      "username": "MariaRamosDev",
+      "img": "https://avatars.githubusercontent.com/u/147427555?v=4",
+      "link": "https://github.com/MariaRamosDev"
+    },
+    {
+      "devId": "3",
+      "name": "Stéphanie Martins",
+      "username": "Ste-nandes",
+      "img": "https://avatars.githubusercontent.com/u/108842254?v=4",
+      "link": "https://github.com/Ste-nandes"
     }
   ]
 }
