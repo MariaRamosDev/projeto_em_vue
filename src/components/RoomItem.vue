@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "RoomItem",
   props: {
-    id: String,
+    roomId: String,
     title: String,
     description: String,
     price: String,
@@ -15,15 +15,12 @@ export default defineComponent({
 </script>
 
 <template>
-  <article :key="id">
+  <article :key="roomId">
     <div class="room">
       <figure
         class="image"
         :style="{
           backgroundImage: `url(${img})`,
-          backgroundPosition: 'center center',
-          backgroundSize: '100%',
-          backgroundRepeat: 'no-repeat',
         }"
       >
         <div class="text-area text-text font-roboto">
@@ -31,7 +28,7 @@ export default defineComponent({
           <div class="description">
             <p class="text-md">{{ description }}</p>
           </div>
-          <p style="margin-top: 1.5rem">{{ price }}</p>
+          <p style="margin-top: 1.5rem">R$ {{ price }}</p>
         </div>
       </figure>
     </div>
@@ -49,6 +46,9 @@ article {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
       .text-area {
         display: flex;
         flex-direction: column;
