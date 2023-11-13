@@ -17,7 +17,7 @@ export default defineComponent({
     this.devs = await axios
       .get("http://localhost:3000/devs")
       .then((response) => response.data)
-      .catch((error) => console.log(`Algo deu erardo: ${error}`));
+      .catch((error) => console.log(`Algo deu errado: ${error}`));
   },
 });
 </script>
@@ -38,12 +38,14 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .about {
-  height: 100%;
+  margin-top: 5rem;
+  height: 28.3rem;
+
   section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 25rem;
+    height: 20rem;
   }
 }
 </style>
