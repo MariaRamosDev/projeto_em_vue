@@ -33,4 +33,13 @@ export default defineComponent({
       :img="room.img"
     />
   </article>
+  <footer class="bg-header">
+    <p>&copy; Instituto Evoluir</p>
+  </footer>
 </template>
+
+<style lang="scss" scoped>
+footer {
+  padding: 2rem;
+}
+</style>
