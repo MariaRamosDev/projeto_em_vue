@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "DevItem",
   props: {
-    id: String,
+    id: Number,
     name: String,
     username: String,
     img: String,
@@ -21,9 +21,7 @@ export default defineComponent({
         <img :src="img" :alt="name" class="img-fluid" />
         <div class="text-area text-[#502c3b] font-roboto">
           <p class="name text-3xl">{{ name }}</p>
-          <p>
-            <a :href="link" class="username">@{{ username }}</a>
-          </p>
+          <a :href="link" target="_blank" class="username">@{{ username }}</a>
         </div>
       </figure>
     </div>

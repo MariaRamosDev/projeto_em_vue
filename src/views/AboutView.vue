@@ -31,6 +31,7 @@ export default defineComponent({
         :name="dev.name"
         :username="dev.username"
         :img="dev.img"
+        :link="dev.link"
       />
     </section>
   </div>
