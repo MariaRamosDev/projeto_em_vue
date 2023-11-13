@@ -24,6 +24,7 @@ export default defineComponent({
 
 <template>
   <div class="about">
+    <p>Essa página foi criada por:</p>
     <section>
       <DevItem
         v-for="dev in devs"
@@ -41,6 +42,12 @@ export default defineComponent({
 .about {
   margin-top: 5rem;
   height: 28.3rem;
+
+  p {
+    font-size: 2rem;
+    position: relative;
+    transform: translateY(-2rem);
+  }
 
   section {
     display: flex;
