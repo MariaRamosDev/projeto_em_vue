@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "RoomItem",
   props: {
-    roomId: String,
+    id: String,
     title: String,
     description: String,
     price: String,
@@ -15,7 +15,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <article :key="roomId">
+  <article :key="id">
     <div class="room">
       <figure
         class="image"
