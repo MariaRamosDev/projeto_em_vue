@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "RoomItem",
   props: {
-    id: String,
+    id: Number,
     title: String,
     description: String,
     price: String,
