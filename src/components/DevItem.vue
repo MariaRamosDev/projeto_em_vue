@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "DevItem",
   props: {
-    devId: String,
+    id: String,
     name: String,
     username: String,
     img: String,
@@ -16,7 +16,7 @@ export default defineComponent({
 
 <template>
   <article>
-    <div :key="devId" class="dev">
+    <div :key="id" class="dev">
       <figure class="image">
         <img :src="img" :alt="name" class="img-fluid" />
         <div class="text-area text-[#502c3b] font-roboto">
@@ -34,23 +34,29 @@ export default defineComponent({
 article {
   display: flex;
   flex-direction: column;
+  height: 20rem;
+  width: 13rem;
   .dev {
     figure {
       display: flex;
-      // justify-content: center;
       flex-direction: column;
-      // padding: 6rem;
-      height: 10rem;
-      width: 10rem;
+      height: inherit;
+      width: inherit;
 
       img {
         border-radius: 50%;
-        height: 10rem;
-        width: 10rem;
+        height: 13rem;
+        width: 13rem;
       }
       .text-area {
-        margin: 2rem;
-        text-align: center;
+        margin-top: 2rem;
+        align-self: center;
+        width: 9rem;
+
+        p.name,
+        p.username {
+          text-align: center;
+        }
       }
     }
   }
